@@ -2688,6 +2688,7 @@ export default function App() {
         <div>
           <header style={TH.header}>
             <div style={TH.titleRow}>
+              <JumpButton setMode={setMode} to="tartarus" icon="🌙" label="Zu Tartarus wechseln" />
               <span style={TH.moon}>¥</span>
               <div>
                 <div style={TH.eyebrow}>SCHÄTZE</div>
@@ -2702,6 +2703,7 @@ export default function App() {
         <div>
           <header style={TH.header}>
             <div style={TH.titleRow}>
+              <JumpButton setMode={setMode} to="calendar" icon="📅" label="Zum Kalender wechseln" />
               <span style={TH.moon}>📖</span>
               <div>
                 <div style={TH.eyebrow}>ELIZABETH</div>
@@ -2942,6 +2944,20 @@ function ModeButton({ mode, setMode }) {
       style={{ ...S.fab, ...(toTartarus ? S.fabTar : S.fabCal) }}
     >
       {toTartarus ? "🌙" : "📅"}
+    </button>
+  );
+}
+
+// ── Einweg-Sprung zu einem festen Modus (z.B. Schatzrechner -> Tartarus) ──
+function JumpButton({ setMode, to, icon, label }) {
+  return (
+    <button
+      onClick={() => setMode(to)}
+      aria-label={label}
+      title={label}
+      style={{ ...S.fab, ...(to === "tartarus" ? S.fabTar : S.fabCal) }}
+    >
+      {icon}
     </button>
   );
 }
