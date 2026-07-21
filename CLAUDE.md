@@ -56,10 +56,6 @@ GameFAQs (Volltext-Dialoge), gegengeprüft mit samurai-gamers.
 - Elizabeth-Request #101 (Endgegner-Quest): Anforderung bewusst vage/mechanisch
   gehalten und mit ⚠ markiert (echte Spoiler-Details zum Postgame-Endgegner,
   auf Wunsch nachreichbar) — Belohnung ist bekannt (Omnipotent Orb)
-- Schatz-Rechner: Preise bleiben bewusst unbearbeitet (schwierigkeitsgrad-abhängig,
-  eigene Schwierigkeitsstufe weicht ab) — weiterhin manuell editierbar im Rechner
-- Juli 27.–31. bleibt bewusst dünner dokumentiert (Guides unterscheiden sich hier,
-  kein Fehler)
 
 Erledigt (zuvor als Lücke gelistet, jetzt recherchiert/korrigiert):
 - Harabah: die "9 Gatekeeper laut thegamer" waren ein Missverständnis — direkte
