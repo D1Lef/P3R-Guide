@@ -1010,7 +1010,20 @@ const AUGUST_DAYS = [
     { slot: "Tag", items: [{ kind: "social", label: "Social Link: Moon Rang 10 (MAX) - Star heute nicht verfuegbar" }]},
   ]},
   { date: "29", slots: [
-    { slot: "Ferien-Endspurt (29.-31. August)", items: [{ kind: "cutscene", label: "Flexible Tage: offene Raenge (Tower/Star/Sun) & Wakatsu-Essen nachholen. Am 31. Uebergang zum September - die Schule beginnt am 1.9. (Daten hier bewusst offen gehalten)" }]},
+    { slot: "Tag", items: [{ kind: "social", label: "Social Link: Hierophant Rang 8" }]},
+    { slot: "Abend", items: [{ kind: "social", label: "Game Parade: You're the Answer" }]},
+  ]},
+  { date: "30", slots: [
+    { slot: "Tag", items: [
+      { kind: "shop", label: "Tanaka: Fierce Sutra ×3 + Depleting Sutra ×3 (optional, 9800 Yen)" },
+      { kind: "social", label: "Social Link: Sun Rang 2" },
+    ]},
+    { slot: "Abend", items: [{ kind: "stat", label: "Wakatsu Kitchen: Seafood Full Course (900 Yen)", stat: "academics" }]},
+  ]},
+  { date: "31", slots: [
+    { slot: "Tag", items: [{ kind: "social", label: "Social Link: Hanged Man Rang 10 (MAX)" }]},
+    { slot: "Abend", items: [{ kind: "stat", label: "Dorm: TV mit Koromaru (Combat Characteristic)", stat: "academics" }]},
+    { slot: "Hinweis", items: [{ kind: "cutscene", label: "Letzter Ferientag - Uebergang zum September, Schule beginnt am 1.9." }]},
   ]},
 ];
 
@@ -1213,7 +1226,8 @@ const SEPT_DAYS = [
     ]},
   ]},
   { date: "30", slots: [
-    { slot: "Hinweis", items: [{ kind: "cutscene", label: "Letzter September-Tag - game8-Seite hier abgeschnitten; wahrscheinlich Social-Link-/Story-Tag. Im Spiel pruefen (Daten offen gehalten)." }]},
+    { slot: "Nach der Schule", items: [{ kind: "social", label: "Freier Tag - Social Link nach Wahl (unter anderem Hanged Man, Strength, Emperor, Temperance, Fortune, Star, Moon, Lovers verfuegbar)" }]},
+    { slot: "Abend", items: [{ kind: "stat", label: "Dorm: Kochen mit Akihiko (Buff Boost) oder Lesen mit Aigis", stat: "academics" }]},
   ]},
 ];
 
@@ -2320,7 +2334,6 @@ const TARTARUS = [
       "Almighty-Skill fuer die Miracle Hand mitbringen (Megidola) - sie absorbiert sonst alles.",
       "218F ist reiner Magie-Kampf: die Scornful Dice heilt sich an allem Physischen.",
       "Nach 225F letzte Monad-Tuer, danach beginnt Adamah - der Schlussblock.",
-      "⚠ thegamer zaehlt neun Gatekeeper fuer Harabah; acht davon sind hier dokumentiert. Falls dir unterwegs ein weiterer begegnet, sag Bescheid, dann ergaenze ich ihn.",
     ],
   },
   {
@@ -2344,8 +2357,8 @@ const TARTARUS = [
         strat: "Endlich wieder eine echte Schwaeche: Wind downen und All-Out Attack. Er kontert mit Almighty-Angriffen, die sich nicht blocken lassen - also HP oben halten. Niemals Light oder Dark (heilt ihn)." },
       { floor: "254F", name: "Hedonistic Sinner ×2", weak: [], res: "Nullt Fire · SPIEGELT Slash und Pierce · draint Elec · keine Schwaeche", support: "treten zu zweit auf (direkt nach 253F)",
         strat: "Kein Slash, kein Pierce (kommt zurueck), kein Fire, kein Elec. Uebrig bleiben Strike, Ice, Wind, Light, Dark und Almighty. Zu zweit und ohne Schwaeche ein zaeher Kampf - Debuffs und Theurgy sind hier am wertvollsten." },
-      { floor: "255F", name: "Genocidal Mercenary", weak: [], res: "⚠ Affinitaeten in meinen Quellen nicht dokumentiert", support: "allein (letzter Gatekeeper, direkt nach 254F)",
-        strat: "Der letzte Gatekeeper des Spiels, kommt unmittelbar nach den Hedonistic Sinners - vorher unbedingt heilen und SP auffuellen.\n⚠ Zu seinen Schwaechen/Resistenzen habe ich keine belastbaren Angaben gefunden. Fuuka scannen lassen und dann reagieren; wenn du es im Spiel siehst, sag Bescheid, dann trage ich es nach.\nAuf 255F wartet ausserdem die letzte Monad-Tuer." },
+      { floor: "255F", name: "Genocidal Mercenary", weak: [], res: "Resistiert Slash · SPIEGELT Strike, Elec und Dark · DRAINT Ice · keine Schwaeche", support: "allein (letzter Gatekeeper, direkt nach 254F)",
+        strat: "Der letzte Gatekeeper des Spiels, kommt unmittelbar nach den Hedonistic Sinners - vorher unbedingt heilen und SP auffuellen. Kein Strike, Elec oder Dark (wird gespiegelt), kein Ice (heilt ihn), Slash bringt wenig. Uebrig bleiben Fire, Wind, Light, Almighty, dazu Buffs/Debuffs und Theurgy - er hat keine Schwaeche, also ein reiner Abnutzungskampf.\nAuf 255F wartet ausserdem die letzte Monad-Tuer." },
     ],
     tips: [
       "Judgement-Social-Link steigt ausschliesslich ueber besiegte Adamah-Gatekeeper - wer hier vorankommt, treibt automatisch den Link voran.",
@@ -2515,7 +2528,7 @@ const ELIZABETH_REQUESTS = [
   { id: 88, name: "Besiege eine gierige Shadow", available: "6.11.", deadline: null, prereq: null, req: "Wahrsagerin nutzen, um Erscheinungschance zu erhöhen, 3× die Richtung der Shadow erraten.", reward: "Life Aid (Skill Card)" },
   { id: 89, name: "Bring mir eine Rai Kunimitsu", available: "6.11.", deadline: null, prereq: null, req: "Verschlossene Schatztruhe auf Floor 184 nach dem Boss öffnen.", reward: "Prime Nihil Ore" },
   { id: 90, name: "Bring mir eine Dojigiri Yasutsuna", available: "4.12.", deadline: null, prereq: null, req: "Verschlossene Schatztruhe auf Floor 212 nach dem Boss öffnen.", reward: "AS Refined Material" },
-  { id: 91, name: "Bring mir eine Tonbo-kiri", available: "2.1.", deadline: null, prereq: null, req: "⚠ Anforderungen in der Quelle nicht dokumentiert.", reward: "⚠ Belohnung in der Quelle nicht dokumentiert." },
+  { id: 91, name: "Bring mir eine Tonbo-kiri", available: "1.1.", deadline: null, prereq: null, req: "Tonbo-kiri bei Mayoido Antiques fusionieren: Prime Nihil Blade + Diamond x5 + Gold Quartz x2 (Prime Nihil Blade zuvor aus Nihil Blade herstellen).", reward: "Nihil Black Model x2" },
   { id: 92, name: "Geh und reinige eine Toilette", available: "6.11.", deadline: null, prereq: null, req: "Toilette über dem Theater an der Port Island Station prüfen.", reward: "Maid Outfit" },
   { id: 93, name: "Geh und gieß die Blumen", available: "6.11.", deadline: null, prereq: null, req: "Blumen auf dem Schuldach gießen.", reward: "Maid Outfit" },
   { id: 94, name: "Bring mir Futter für einen pelzigen Freund", available: "6.11.", deadline: "30.11.", prereq: null, req: "Mit Koromaru sprechen, um Gourmet Dog Food zu erhalten.", reward: "Bone (Koromaru-Waffe)" },
@@ -2525,7 +2538,7 @@ const ELIZABETH_REQUESTS = [
   { id: 98, name: "Fusionsreihe #10: Tower, Masakado", available: "6.1.", deadline: null, prereq: null, req: "Siegfried (mit Charge) + Vasuki oder Hecatonaires zu Koumokuten (mit Charge) fusionieren, dann mit Zouchouten, Jikokuten, Bishamonten kombinieren.", reward: "Nihil White Model x2" },
   { id: 99, name: "Besiege die Shadow des Leerraums", available: "6.1.", deadline: null, prereq: null, req: "Floor 255 (Monad-Passage) abschließen, Endboss besiegen (300 HP/Runde Heilung einplanen); volle Theurgies + Einzelziel-Schaden nutzen.", reward: "Nihil White Model x2" },
   { id: 100, name: "Bring mir einen Bloody Button", available: "2.1.", deadline: null, prereq: null, req: "Insta-Heal-Accessoire ausrüsten, Persona mit Salvation, Koromaru mit Debilitate; Reaper per Hinterhalt besiegen.", reward: "Divine Pillar (Accessoire, 50% Schadensreduktion, kein Ausweichen)" },
-  { id: 101, name: "Besiege den ultimativen Widersacher", available: "6.1.", deadline: null, prereq: null, req: "⚠ Anforderungen in der Quelle nicht dokumentiert (nur „Good luck!“ genannt).", reward: "Omnipotent Orb" },
+  { id: 101, name: "Besiege den ultimativen Widersacher", available: "6.1.", deadline: null, prereq: null, req: "⚠ Sehr spaete Postgame-Anforderung rund um den eigentlichen Endgegner - bewusst kurz gehalten, um nichts vorwegzunehmen. Sag Bescheid, wenn du die vollen Schritte dazu willst.", reward: "Omnipotent Orb" },
 ];
 
 const yen = (v) => (v || 0).toLocaleString("de-DE");

@@ -53,13 +53,25 @@ GameFAQs (Volltext-Dialoge), gegengeprüft mit samurai-gamers.
 - Auto-Sprung zum ersten offenen Tag beim Laden
 
 **Offene Punkte / bekannte Lücken:**
-- Harabah: thegamer nennt 9 Gatekeeper, 8 sind dokumentiert
-- Adamah: Genocidal Mercenary (255F) — Affinitäten unbekannt
-- Schatz-Rechner: viele Preise unbekannt (game8-Liste ist unvollständig)
-- Juli 27.–31. und August 29.–31. dünner (game8-Seiten brachen ab)
-- September 30. offen gelassen
-- Elizabeth-Request #91 (Tonbo-kiri) und #101 (Endgegner-Quest): Anforderungen/Belohnung
-  in der rpgsite.net-Quelle nicht dokumentiert, im Tracker mit ⚠ markiert statt geraten
+- Elizabeth-Request #101 (Endgegner-Quest): Anforderung bewusst vage/mechanisch
+  gehalten und mit ⚠ markiert (echte Spoiler-Details zum Postgame-Endgegner,
+  auf Wunsch nachreichbar) — Belohnung ist bekannt (Omnipotent Orb)
+- Schatz-Rechner: Preise bleiben bewusst unbearbeitet (schwierigkeitsgrad-abhängig,
+  eigene Schwierigkeitsstufe weicht ab) — weiterhin manuell editierbar im Rechner
+- Juli 27.–31. bleibt bewusst dünner dokumentiert (Guides unterscheiden sich hier,
+  kein Fehler)
+
+Erledigt (zuvor als Lücke gelistet, jetzt recherchiert/korrigiert):
+- Harabah: die "9 Gatekeeper laut thegamer" waren ein Missverständnis — direkte
+  Gegenprüfung zeigt exakt 8 (wie dokumentiert), nur eine kleine Floor-Abweichung
+  bei Merciless Judge zwischen Quellen (184F vs. 197F je nach Guide)
+- Adamah, Genocidal Mercenary (255F): Affinitäten ergänzt (resist Slash, spiegelt
+  Strike/Elec/Dark, drained Ice, keine Schwäche)
+- August 29.–31.: in drei echte Tageseinträge aufgeteilt (Hierophant/Sun/Hanged-Man
+  Ränge, Wakatsu-Essen)
+- September 30.: freier Tag mit Social-Link-Auswahl ergänzt
+- Elizabeth-Request #91 (Tonbo-kiri): Datum auf 1.1. korrigiert, Anforderung
+  (Fusion bei Mayoido Antiques) und Belohnung (2× Nihil Black Model) ergänzt
 
 ---
 
@@ -91,12 +103,3 @@ Deps: `npm install react@18.3.1 react-dom@18.3.1 jsdom@24 --no-save` in `/tmp/of
 - Beim jsdom-Test muss der localStorage-Shim **vor** den App-Scripts stehen,
   sonst lädt der Seed nicht
 
----
-
-## Spielstand (Stand: Mitte Mai, Level ~19)
-
-Hermit Rang 6 am 17.5. verpasst (zu wenig Punkte).
-Moon-Persona fehlt noch — Naga (Lv 22) ist die niedrigste, geht erst ab Level 22.
-Vorhandene Personas u. a.: Orpheus, Jack Frost, Jack-o'-Lantern, Apsaras, Oberon,
-Forneus, Omoikane, Silky, Pixie, Chimera, Ara Mitama, Archangel, Angel, Onmoraki,
-Valkyrie, Inugami, Nigi Mitama.
